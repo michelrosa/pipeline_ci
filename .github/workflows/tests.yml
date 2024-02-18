@@ -26,7 +26,7 @@ jobs:
           mix local.rebar --force
           mix local.hex --force
           mix deps.get
-          mix exto.create
+          mix ecto.create
       - name: ===> Verify Coverage and tests
         run: mix coveralls.html
     services:
